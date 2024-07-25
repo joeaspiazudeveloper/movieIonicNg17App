@@ -1,4 +1,3 @@
-import { Component, OnInit, inject } from '@angular/core';
 import {
   IonHeader,
   IonToolbar,
@@ -20,11 +19,12 @@ import { MovieService } from '../services/movie.service';
 import { DatePipe } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { catchError, finalize } from 'rxjs';
+import { Component, inject, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-home-defer',
+  templateUrl: './home-defer.page.html',
+  styleUrls: ['./home-defer.page.scss'],
   standalone: true,
   imports: [
     IonHeader,
@@ -45,7 +45,7 @@ import { catchError, finalize } from 'rxjs';
     RouterModule,
   ],
 })
-export class HomePage implements OnInit {
+export class HomeDeferPage implements OnInit {
   private movieService = inject(MovieService);
 
   private currentPage = 1;
