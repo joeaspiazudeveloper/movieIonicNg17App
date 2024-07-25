@@ -1,0 +1,7 @@
+{
+  "name": "movieIonicNg17App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
