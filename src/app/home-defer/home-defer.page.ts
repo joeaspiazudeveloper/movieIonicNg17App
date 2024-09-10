@@ -13,8 +13,7 @@ import {
   IonInfiniteScroll,
   IonInfiniteScrollContent,
   IonSkeletonText,
-  IonAlert,
-} from '@ionic/angular/standalone';
+  IonAlert, IonNote } from '@ionic/angular/standalone';
 import { MovieService } from '../services/movie.service';
 import { DatePipe } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -26,7 +25,7 @@ import { Component, inject, OnInit } from '@angular/core';
   templateUrl: './home-defer.page.html',
   styleUrls: ['./home-defer.page.scss'],
   standalone: true,
-  imports: [
+  imports: [IonNote, 
     IonHeader,
     IonToolbar,
     IonTitle,
